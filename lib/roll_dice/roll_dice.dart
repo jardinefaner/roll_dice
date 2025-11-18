@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:s2_rolldice/roll_dice/centered_text.dart';
+import 'package:s2_rolldice/roll_dice/dice_roller.dart';
 
 class RollDice extends StatelessWidget {
-  const RollDice({super.key});
+  RollDice({super.key});
+
+
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -15,7 +18,7 @@ class RollDice extends StatelessWidget {
           ],
         ),
       ),
-      child: CenteredText('Hey, there!'),
+      child: DiceRoller(),
     );
   }
 }
