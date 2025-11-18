@@ -1,12 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:s2_rolldice/core/theme/app_theme.dart';
+import 'package:s2_rolldice/gradient_container.dart' show GradientContainer;
 
 /// The entry point of the application.
 void main() {
-  runApp(const MyApp());
+  WidgetsFlutterBinding.ensureInitialized();
+  SystemChrome.setPreferredOrientations([
+    DeviceOrientation.portraitUp,
+    DeviceOrientation.portraitDown,
+  ]).then((_) => runApp(const MyApp()));
 }
 
 /// The root widget of the application.
+///
 class MyApp extends StatelessWidget {
   /// Creates a new instance of the [MyApp] widget.
   const MyApp({super.key});
@@ -31,13 +38,9 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        mainAxisSize: MainAxisSize.max,
-        children: [Text('Hello, world!')],
-      ),
+    return RotatedBox(
+      quarterTurns: 2,
+      child: Scaffold(body: GradientContainer()),
     );
   }
 }
