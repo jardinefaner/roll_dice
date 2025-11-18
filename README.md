@@ -1,21 +1,23 @@
-# s2_rolldice
+# Udemy - Flutter & Dart - The Complete Guide
 
-A simple Flutter application that simulates rolling a dice.
+This repository contains all the projects I have completed as part of the "Flutter & Dart - The Complete Guide" Udemy course.
 
-## Features
+## Course Structure
 
-*   Roll a six-sided die.
-*   See the result of the die roll.
+The course is divided into modules, and each module has one or more projects.
+Each project is a self-contained Flutter application.
 
-## Getting Started
+## Projects
 
-This project is a starting point for a Flutter application.
+The projects in this repository are organized by module and lesson.
+Each project has its own directory and can be run independently.
 
-A few resources to get you started if this is your first Flutter project:
+### Themes
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+All projects in this repository share a common theme.
+The theme is defined in the `lib/core/theme` directory and is used by all projects.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Modularity
+
+The projects are designed to be modular.
+Each project is a separate module and can be easily integrated into other projects.
