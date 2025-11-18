@@ -5,7 +5,7 @@ import 'package:google_fonts/google_fonts.dart';
 class AppTextThemes {
   /// Builds a text theme from a base text theme.
   static TextTheme _buildTextTheme(TextTheme base) {
-    final textStyle = GoogleFonts.sourceSans3();
+    final textStyle = GoogleFonts.merriweatherSans();
     return base.copyWith(
       bodyLarge: base.bodyLarge?.copyWith(fontFamily: textStyle.fontFamily),
       bodyMedium: base.bodyMedium?.copyWith(fontFamily: textStyle.fontFamily),
@@ -15,11 +15,11 @@ class AppTextThemes {
 
   /// The light text theme for the application.
   static TextTheme lightTextTheme = _buildTextTheme(
-    GoogleFonts.playfairDisplayScTextTheme(ThemeData.light().textTheme),
+    GoogleFonts.merriweatherTextTheme(ThemeData.light().textTheme),
   );
 
   /// The dark text theme for the application.
   static TextTheme darkTextTheme = _buildTextTheme(
-    GoogleFonts.playfairDisplayScTextTheme(ThemeData.dark().textTheme),
+    GoogleFonts.merriweatherTextTheme(ThemeData.dark().textTheme),
   );
 }
