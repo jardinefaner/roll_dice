@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:s2_rolldice/core/theme/app_theme.dart';
-import 'package:s2_rolldice/roll_dice/roll_dice.dart';
+import 'package:s2_rolldice/modules/quiz_app/quiz_app.dart';
+import 'package:s2_rolldice/modules/roll_dice/roll_dice.dart';
 
 /// The entry point of the application.
 void main() {
@@ -40,9 +41,6 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return RotatedBox(
-      quarterTurns: 2,
-      child: Scaffold(body: RollDice()),
-    );
+    return RotatedBox(quarterTurns: 2, child: Scaffold(body: QuizApp()));
   }
 }

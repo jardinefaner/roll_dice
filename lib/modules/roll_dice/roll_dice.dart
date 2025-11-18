@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:s2_rolldice/roll_dice/dice_roller.dart';
+import 'package:s2_rolldice/modules/roll_dice/dice_roller.dart';
 
 class RollDice extends StatelessWidget {
   RollDice({super.key});
-
-
 
   @override
   Widget build(BuildContext context) {
