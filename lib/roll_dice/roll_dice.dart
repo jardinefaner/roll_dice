@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:s2_rolldice/centered_text.dart';
+import 'package:s2_rolldice/roll_dice/centered_text.dart';
 
-class GradientContainer extends StatelessWidget {
-  const GradientContainer({super.key});
+class RollDice extends StatelessWidget {
+  const RollDice({super.key});
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -11,11 +11,11 @@ class GradientContainer extends StatelessWidget {
           radius: 4,
           colors: [
             Theme.of(context).colorScheme.surfaceContainer,
-            Theme.of(context).colorScheme.surfaceDim,
+            Theme.of(context).colorScheme.surfaceBright,
           ],
         ),
       ),
-      child: CenteredText('Hey, there!')
+      child: CenteredText('Hey, there!'),
     );
   }
 }

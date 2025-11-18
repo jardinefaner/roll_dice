@@ -12,9 +12,10 @@ class CenteredText extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         mainAxisSize: MainAxisSize.max,
         children: [
+          Text(text, style: Theme.of(context).textTheme.headlineLarge),
           Text(
-            text,
-            style: Theme.of(context).textTheme.headlineLarge!.copyWith(),
+            'What\'s your favorite food?',
+            style: Theme.of(context).textTheme.bodyLarge,
           ),
         ],
       ),
