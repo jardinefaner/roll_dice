@@ -41,6 +41,21 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return RotatedBox(quarterTurns: 2, child: Scaffold(body: QuizApp()));
+    return RotatedBox(
+      quarterTurns: 2,
+      child: Container(
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
+            colors: [
+              Theme.of(context).colorScheme.surfaceContainer,
+              Theme.of(context).colorScheme.surfaceContainerHighest,
+            ],
+          ),
+        ),
+        child: Scaffold(backgroundColor: Colors.transparent, body: QuizApp()),
+      ),
+    );
   }
 }
