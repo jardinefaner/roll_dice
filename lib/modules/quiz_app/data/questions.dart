@@ -1,5 +1,6 @@
 import 'package:s2_rolldice/modules/quiz_app/models/quiz_question.dart';
 
+/// A list of quiz questions.
 const questions = [
   QuizQuestion(
     'What are the main building blocks of Flutter UIs?',
@@ -63,12 +64,7 @@ const questions = [
   ),
   QuizQuestion(
     'What is the main programming language used for Flutter development?',
-    [
-      'Dart',
-      'Java',
-      'Swift',
-      'Kotlin',
-    ],
+    ['Dart', 'Java', 'Swift', 'Kotlin'],
   ),
   QuizQuestion(
     'What is a "hot reload" in Flutter?',

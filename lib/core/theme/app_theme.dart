@@ -9,6 +9,7 @@ class AppTheme {
     brightness: Brightness.light,
     colorScheme: AppColorSchemes.lightColorScheme,
     textTheme: AppTextThemes.lightTextTheme,
+    // elevatedButtonTheme: _elevatedButtonThemeDataLight(),
   );
 
   /// The dark theme for the application.
@@ -16,5 +17,24 @@ class AppTheme {
     brightness: Brightness.dark,
     colorScheme: AppColorSchemes.darkColorScheme,
     textTheme: AppTextThemes.darkTextTheme,
+    // elevatedButtonTheme: _elevatedButtonThemeDataDark(),
   );
 }
+
+// ElevatedButtonThemeData _elevatedButtonThemeDataLight() {
+//   return ElevatedButtonThemeData(
+//     style: ElevatedButton.styleFrom(
+//       backgroundColor: AppColorSchemes.lightColorScheme.primary,
+//       foregroundColor: AppColorSchemes.lightColorScheme.onPrimary,
+//     ),
+//   );
+// }
+//
+// ElevatedButtonThemeData _elevatedButtonThemeDataDark() {
+//   return ElevatedButtonThemeData(
+//     style: ElevatedButton.styleFrom(
+//       backgroundColor: AppColorSchemes.darkColorScheme.tertiary,
+//       foregroundColor: AppColorSchemes.darkColorScheme.onPrimary,
+//     ),
+//   );
+// }
