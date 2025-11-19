@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'dart:math';
 
+/// A stateful widget that displays two dice images and a button to roll them.
 class DiceRoller extends StatefulWidget {
   const DiceRoller({super.key});
 
@@ -8,13 +9,15 @@ class DiceRoller extends StatefulWidget {
   State<DiceRoller> createState() => _DiceRollerState();
 }
 
+/// The state for the [DiceRoller] widget.
 class _DiceRollerState extends State<DiceRoller> {
 
   final Random randomizer = Random();
 
   String activeDiceImage1 = 'assets/dice-images/dice-1.png';
-  String activeDiceImage2 = 'assets/dice-images/dice-1.png';
+  String activeDiceImage2 = 'assets-images/dice-1.png';
 
+  /// Rolls the dice and updates the images.
   void rollDice() {
     setState(() {
       int dice1 = randomizer.nextInt(6) + 1;

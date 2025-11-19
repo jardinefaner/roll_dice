@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+/// A stateless widget that displays a centered text.
 class CenteredText extends StatelessWidget {
   const CenteredText(this.text, {super.key});
 

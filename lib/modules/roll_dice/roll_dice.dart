@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:s2_rolldice/modules/roll_dice/dice_roller.dart';
 
+/// A stateless widget that serves as the main screen for the roll dice feature.
+///
+/// This widget displays a container with a [RadialGradient] background and hosts
+/// the [DiceRoller] widget, which contains the core functionality of the dice
+
 class RollDice extends StatelessWidget {
   RollDice({super.key});
 
